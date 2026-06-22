@@ -1,0 +1,6 @@
+{
+  "name": "Marcus Vance Portfolio",
+  "description": "Premium slate dark mode portfolio for Marcus Vance, Senior Full-Stack Developer & Systems Architect, featuring skill meters and server-side Gemini Career Assistant twin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
