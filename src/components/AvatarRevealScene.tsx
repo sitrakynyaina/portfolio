@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import fond from "../assets/images/fond.jpg";
 
 export default function AvatarRevealScene({ onComplete }: { onComplete: () => void }) {
 
@@ -41,7 +42,7 @@ export default function AvatarRevealScene({ onComplete }: { onComplete: () => vo
         <div className="w-40 h-40 rounded-full bg-gradient-to-tr from-teal-400 via-cyan-400 to-indigo-600 p-[3px] shadow-[0_0_50px_rgba(6,182,212,0.3),0_0_100px_rgba(99,102,241,0.2)]">
           <div className="w-full h-full rounded-full overflow-hidden bg-[#0a0f1e] border-[3px] border-[#0d1225]">
             <img
-              src="/src/assets/images/fond.jpg"
+              src={fond}
               alt="Sitraky Avatar"
               className="w-full h-full object-cover"
             />

@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Shield, Cpu } from "lucide-react";
-
+import fond from "../assets/images/fond.jpg";
 
 export default function Hero() {
   const containerVariants = {
@@ -121,7 +121,7 @@ export default function Hero() {
             
             <div className="w-full h-full rounded-full overflow-hidden bg-slate-950 relative border-4 border-slate-900 flex items-center justify-center">
               <img
-                src="/src/assets/images/fond.jpg"
+                src={fond}
                 alt="Sitraky Ny Aina Avatar"
                 className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                 referrerPolicy="no-referrer"

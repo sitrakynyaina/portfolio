@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import codeKidsImg from "../assets/images/codeKids.png";
+import devfestImg from "../assets/images/devfest.png";
+import dinImg from "../assets/images/din.png";
+import fayzeImg from "../assets/images/fayze.png";
 import {
   Github,
   ExternalLink,
@@ -15,95 +19,98 @@ export default function Projects() {
   >("All");
 
   const projectList: Project[] = [
-    {
-      id: "proj-1",
-      title: "Code Kids",
-      subtitle: "Educational Platform for Kids & Technology",
+  {
+    id: "proj-1",
+    title: "Code Kids",
+    subtitle: "Educational Platform for Kids & Technology",
 
-      description:
-        "Developed during DevHunt 5.0 hackathon at ENI under the theme 'Kids and Technology', this project is an interactive platform designed to help pupils familiarize themselves with modern technology through a simple and engaging learning environment built with React, Express, and PostgreSQL.",
+    description:
+      "Developed during DevHunt 5.0 hackathon at ENI under the theme 'Kids and Technology', this project is an interactive platform designed to help pupils familiarize themselves with modern technology through a simple and engaging learning environment built with React, Express, and PostgreSQL.",
 
-      tags: ["React", "TypeScript", "Express", "PostgreSQL", "Tailwind CSS"],
+    tags: ["React", "TypeScript", "Express", "PostgreSQL", "Tailwind CSS"],
 
-      category: "Full-Stack",
+    category: "Full-Stack",
 
-      imageUrl: "/src/assets/images/codeKids.png",
+    imageUrl: codeKidsImg,
 
-      githubUrl: "",
-      liveUrl: "",
+    githubUrl: "",
+    liveUrl: "",
 
-      stats: [
-        { label: "Learning Engagement", value: "High" },
-        { label: "Interactive Modules", value: "Multiple" },
-      ],
-    },
-    {
-      id: "proj-2",
-      title: "safe AI",
-      subtitle: "Safe AI Toolkit Platform",
+    stats: [
+      { label: "Learning Engagement", value: "High" },
+      { label: "Interactive Modules", value: "Multiple" },
+    ],
+  },
 
-      description:
-        "Developed during DevFest Antananarivo under the theme 'Safe AI for Mankind', this project is a unified AI safety platform that integrates multiple tools such as toxicity detection (Detoxify), hallucination detection, and personal data cleaning. The application helps users interact safely with AI systems by analyzing and filtering generated content.",
+  {
+    id: "proj-2",
+    title: "Safe AI",
+    subtitle: "Safe AI Toolkit Platform",
 
-      tags: ["React", "TypeScript", "AI Safety", "Detoxify","..."],
+    description:
+      "Developed during DevFest Antananarivo under the theme 'Safe AI for Mankind', this project is a unified AI safety platform that integrates multiple tools such as toxicity detection (Detoxify), hallucination detection, and personal data cleaning. The application helps users interact safely with AI systems by analyzing and filtering generated content.",
 
-      category: "Full-Stack",
+    tags: ["React", "TypeScript", "AI Safety", "Detoxify"],
 
-      imageUrl: "/src/assets/images/devfest.png",
+    category: "Full-Stack",
 
-      githubUrl: "",
-      liveUrl: "",
+    imageUrl: devfestImg,
 
-      stats: [
-        { label: "AI Safety Tools", value: "3+" },
-        { label: "Content Filtering Accuracy", value: "High" },
-      ],
-    },
-    {
-      id: "proj-3",
-      title: "Internal Sales Management System",
-      subtitle: "Enterprise Service Vente Management System",
+    githubUrl: "",
+    liveUrl: "",
 
-      description:
-        "Internship project developed at the Imprimerie Nationale Antananarivo for managing the Service Vente. The system acts as a centralized platform to handle sales operations, data tracking, and internal workflow management with efficient storage and processing using PostgreSQL.",
+    stats: [
+      { label: "AI Safety Tools", value: "3+" },
+      { label: "Content Filtering Accuracy", value: "High" },
+    ],
+  },
 
-      tags: ["React.js", "Oracle 10g R2", "Spring Boot", "Vitest"],
+  {
+    id: "proj-3",
+    title: "Internal Sales Management System",
+    subtitle: "Enterprise Service Vente Management System",
 
-      category: "Full-Stack",
+    description:
+      "Internship project developed at the Imprimerie Nationale Antananarivo for managing the Service Vente. The system acts as a centralized platform to handle sales operations, data tracking, and internal workflow management with efficient storage and processing using PostgreSQL.",
 
-      imageUrl: "/src/assets/images/din.png",
+    tags: ["React.js", "Oracle 10g R2", "Spring Boot", "Vitest"],
 
-      githubUrl: "",
-      liveUrl: "",
+    category: "Full-Stack",
 
-      stats: [
-        { label: "Operational Efficiency", value: "Improved" },
-        { label: "Data Processing", value: "Optimized" },
-      ],
-    },
-    {
-      id: "proj-4",
-      title: "FAYZE – Smart City Companion App",
-      subtitle: "Youth Computing Hackathon Project",
+    imageUrl: dinImg,
 
-      description:
-        "Developed during a Youth Computing Hackathon focused on Smart City solutions, FAYZE is a platform designed to help students in Fianarantsoa easily find accommodation, discover the best transport routes, and locate leisure and distraction spots. The goal is to improve urban accessibility and student daily life using technology.",
+    githubUrl: "",
+    liveUrl: "",
 
-      tags: ["React", "TypeScript", "Tailwind CSS", "HTML5", "UX Design"],
+    stats: [
+      { label: "Operational Efficiency", value: "Improved" },
+      { label: "Data Processing", value: "Optimized" },
+    ],
+  },
 
-      category: "Full-Stack",
+  {
+    id: "proj-4",
+    title: "FAYZE – Smart City Companion App",
+    subtitle: "Youth Computing Hackathon Project",
 
-      imageUrl: "/src/assets/images/fayze.png",
+    description:
+      "Developed during a Youth Computing Hackathon focused on Smart City solutions, FAYZE is a platform designed to help students in Fianarantsoa easily find accommodation, discover the best transport routes, and locate leisure and distraction spots. The goal is to improve urban accessibility and student daily life using technology.",
 
-      githubUrl: "",
-      liveUrl: "",
+    tags: ["React", "TypeScript", "Tailwind CSS", "HTML5", "UX Design"],
 
-      stats: [
-        { label: "Urban Accessibility", value: "Improved" },
-        { label: "User Experience Score", value: "High" },
-      ],
-    },
-  ];
+    category: "Full-Stack",
+
+    imageUrl: fayzeImg,
+
+    githubUrl: "",
+    liveUrl: "",
+
+    stats: [
+      { label: "Urban Accessibility", value: "Improved" },
+      { label: "User Experience Score", value: "High" },
+    ],
+  },
+];
 
   const categories = [
     "All",
