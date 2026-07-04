@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import CareerAssistant from "./components/CareerAssistant";
 import Footer from "./components/Footer";
 import AvatarRevealScene from "./components/AvatarRevealScene";
+import EducationTimeline from "./components/EducationTimeline";
 
 export default function App() {
   const [isIntroComplete, setIsIntroComplete] = useState(false);
@@ -55,9 +56,10 @@ export default function App() {
           <Navbar />
           <Hero />
           <About />
-          <TimeLine />
-          <Skills />
           <Projects />
+          <EducationTimeline/>
+          {/* <TimeLine /> */}
+          <Skills />
           <Contact />
           <Footer />
           <CareerAssistant />

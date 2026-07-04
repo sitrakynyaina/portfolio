@@ -8,7 +8,7 @@ export default function CareerAssistant() {
     {
       id: "initial",
       sender: "ai",
-      text: "Hello! I am Marcus Vance's virtual agent. Feel free to query me about: his experience at Stanford, core database performance tactics, standard contract rates, or custom system designs.",
+      text: "Hello! I am Landry's virtual agent. Feel free to query me about: his experience, skills, or more information.",
       timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
     },
   ]);
@@ -57,7 +57,7 @@ export default function CareerAssistant() {
         {
           id: `ai-${Date.now()}`,
           sender: "ai",
-          text: data.text || "I was unable to retrieve a response. Please try again or query Marcus directly.",
+          text: data.text || "I was unable to retrieve a response. Please try again or query Landry directly.",
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         },
       ]);
@@ -68,7 +68,7 @@ export default function CareerAssistant() {
         {
           id: `ai-err-${Date.now()}`,
           sender: "ai",
-          text: "Communications node offline. Please ask your questions directly using the Contact form, or email Marcus at landrysitrak@gmail.com.",
+          text: "Communications node offline. Please ask your questions directly using the Contact form, or email Landry at landrysitrak@gmail.com.",
           timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
         },
       ]);
@@ -82,7 +82,7 @@ export default function CareerAssistant() {
       {
         id: "initial",
         sender: "ai",
-        text: "System restarted. Probe me about Marcus Vance's architectural strategies, tech stacks, or contact channels.",
+        text: "System restarted. Probe me about Landry's architectural strategies, tech stacks, or contact channels.",
         timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
       },
     ]);
@@ -111,7 +111,7 @@ export default function CareerAssistant() {
           <div className="flex items-center justify-between px-5 py-4 bg-slate-950/80 border-b border-slate-900">
             <div className="flex items-center gap-2.5">
               <div className="w-2.5 h-2.5 rounded-full bg-teal-500 animate-pulse" />
-              <span className="text-xs font-bold text-slate-300 tracking-wider">MARCUS_AI // TWIN_PROBE_V1</span>
+              <span className="text-xs font-bold text-slate-300 tracking-wider">AGENT</span>
             </div>
             <div className="flex items-center gap-3">
               <button

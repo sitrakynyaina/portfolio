@@ -15,12 +15,9 @@ export default function Footer() {
               <Terminal className="w-3.5 h-3.5" />
             </div>
             <span className="font-mono text-xs font-bold uppercase tracking-widest text-slate-400">
-              MARCUS Vance // ARCHITECT
+              Landry Sitrakiniaina
             </span>
           </div>
-          <p className="text-[11px] font-sans text-slate-600 text-center md:text-left">
-            © {new Date().getFullYear()} Marcus Vance. All rights registered. Hand-sculpted in dark slate.
-          </p>
         </div>
 
         {/* Quick links and contact summary */}
@@ -34,10 +31,10 @@ export default function Footer() {
         {/* Right Action Trigger Buttons */}
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3 text-slate-600">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-teal-400 transition-colors">
+            <a href="https://github.com/sitrakynyaina" target="_blank" rel="noreferrer" className="hover:text-teal-400 transition-colors">
               <Github className="w-4 h-4" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-teal-400 transition-colors">
+            <a href="https://www.linkedin.com/in/landry-sitrakiniaina-baa86b335/" target="_blank" rel="noreferrer" className="hover:text-teal-400 transition-colors">
               <Linkedin className="w-4 h-4" />
             </a>
             <a href="mailto:landrysitrak@gmail.com" className="hover:text-teal-400 transition-colors">

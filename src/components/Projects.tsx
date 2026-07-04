@@ -127,7 +127,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 bg-[#0c0d13] relative overflow-hidden"
+      className="py-24 relative overflow-hidden"
     >
       {/* Upper ambient decor */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/5 rounded-full blur-[150px] pointer-events-none" />

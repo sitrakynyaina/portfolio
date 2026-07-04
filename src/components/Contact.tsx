@@ -6,21 +6,21 @@ export default function Contact() {
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      url: "https://linkedin.com/in/ton-profil",
+      url: "https://www.linkedin.com/in/landry-sitrakiniaina-baa86b335/",
       color: "hover:text-blue-400",
       label: "Professional Network"
     },
     {
       name: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      url: "https://github.com/ton-username",
+      url: "https://github.com/sitrakynyaina",
       color: "hover:text-white",
       label: "Source Code"
     },
     {
       name: "Facebook",
       icon: <Facebook className="w-5 h-5" />,
-      url: "https://facebook.com/ton-profil",
+      url: "https://web.facebook.com/profile.php?id=100013418474824",
       color: "hover:text-blue-600",
       label: "Social Presence"
     }
@@ -82,7 +82,7 @@ export default function Contact() {
         {/* Localisation Discrète */}
         <div className="mt-16 flex items-center justify-center gap-2 text-slate-500 font-mono text-xs uppercase tracking-widest">
           <MapPin className="w-3 h-3 text-teal-500" />
-          San Francisco, CA • Remote Worldwide
+          101 Antananarivo, Madagascar
         </div>
       </div>
     </section>

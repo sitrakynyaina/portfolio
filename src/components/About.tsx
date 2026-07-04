@@ -21,9 +21,12 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-[#0c0d13] relative overflow-hidden">
-      {/* Background decoration blur */}
-      <div className="absolute right-0 top-1/3 w-[350px] h-[350px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none" />
+    <section id="about" className="py-24 relative overflow-hidden">
+      {/* CORRECTION : Continuité de la grille Cyber-Dots depuis le Hero */}
+      <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-10" />
+      
+      {/* CORRECTION : Effet de lumière doux sur la droite pour équilibrer le glow du Hero */}
+      <div className="absolute -right-1/4 top-1/3 w-[500px] h-[500px] bg-teal-500/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
