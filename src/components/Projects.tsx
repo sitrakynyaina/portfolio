@@ -34,7 +34,30 @@ export default function Projects() {
         { label: "Interactive Modules", value: "Multiple" },
       ],
     },
-     
+     {
+      id: "proj-5",
+      title: "Iza Ary O",
+      subtitle: "Innovative Social Platform Concept",
+      description:
+        "Designed during the 24-hour internal hackathon at ENI Fianarantsoa, Iza Ary O is an innovative social platform that reimagines online interactions through engaging and original social experiences. The project is currently in the design and development phase, with the objective of building a modern, human-centered, and interactive platform.",
+      tags: [
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Socket.IO",
+        "UI/UX Design"
+      ],
+      category: "Full-Stack",
+      imageUrl: izaaryoimg,
+      githubUrl: "",
+      liveUrl: "https://vlog-iza-ary-o.vercel.app"
+,
+      stats: [
+        { label: "Hackathon Duration", value: "24h" },
+        { label: "Development Status", value: "In Progress" },
+      ],
+    },
     {
       id: "proj-2",
       title: "Safe AI",
@@ -83,30 +106,7 @@ export default function Projects() {
         { label: "User Experience Score", value: "High" },
       ],
     },
-    {
-      id: "proj-5",
-      title: "Iza Ary O",
-      subtitle: "Innovative Social Platform Concept",
-      description:
-        "Designed during the 24-hour internal hackathon at ENI Fianarantsoa, Iza Ary O is an innovative social platform that reimagines online interactions through engaging and original social experiences. The project is currently in the design and development phase, with the objective of building a modern, human-centered, and interactive platform.",
-      tags: [
-        "React",
-        "Node.js",
-        "Express",
-        "PostgreSQL",
-        "Socket.IO",
-        "UI/UX Design"
-      ],
-      category: "Full-Stack",
-      imageUrl: izaaryoimg,
-      githubUrl: "",
-      liveUrl: "https://vlog-iza-ary-o.vercel.app"
-,
-      stats: [
-        { label: "Hackathon Duration", value: "24h" },
-        { label: "Development Status", value: "In Progress" },
-      ],
-    },
+    
   ];
 
   const categories = [
