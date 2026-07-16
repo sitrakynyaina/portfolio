@@ -4,8 +4,6 @@ import { GoogleGenAI } from "@google/genai";
 import { createServer as createViteServer } from "vite";
 import dotenv from "dotenv";
 
-
-
 dotenv.config();
 
 const app = express();
@@ -18,7 +16,7 @@ app.use(express.json());
 let aiInstance: GoogleGenAI | null = null;
 function getGeminiClient(): GoogleGenAI {
   if (!aiInstance) {
-    const apiKey = process.env.GEMINI_API_KEY;
+    const apiKey = process.env.GCP_API_KEY;
     if (!apiKey) {
       console.warn("GEMINI_API_KEY environment variable is not defined. AI Assistant will operate in simulation mode.");
     }
@@ -41,7 +39,7 @@ Speak in a professional, composed, confident, and highly competent manner. Avoid
 
 Key Facts about Landry:
 - Title: Junior Full-Stack Developer & Systems Architect
-- Experience: 2 years of  experience designing and implementing high-throughput web applications and scalable systems.
+- Experience: 2 years of experience designing and implementing high-throughput web applications and scalable systems.
 - Style / Personality: Sharp, technical, clean-cut, data-driven, engineering-first, professional, masculine.
 - Education: Computer Science and software engineering at ENI Fianarantsoa.
 - Core Specialties: Full-stack responsive React applications, serverless microservice architectures, and robust system performance optimization.
@@ -63,7 +61,7 @@ Guidelines for Chatting:
 `;
 
 // API Career Assistant Route
-app.post("/api/career-assistant", async (req:any, res:any) => {
+app.post("/api/career-assistant", async (req: any, res: any) => {
   try {
     const { messages } = req.body;
     if (!messages || !Array.isArray(messages)) {
@@ -86,8 +84,9 @@ app.post("/api/career-assistant", async (req:any, res:any) => {
       parts: [{ text: m.text }],
     }));
 
+    // Utilizing gemini-3-flash-preview for advanced reasoning and low-latency interaction
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-3-flash-preview",
       contents: contents,
       config: {
         systemInstruction: RESUME_PROMPT,
@@ -114,7 +113,7 @@ function generateMockResponse(prompt: string): string {
   if (query.includes("project") || query.includes("work")) {
     return "Landry's portfolio features three flagship projects: the SaaS Enterprise Financial Dashboard, the Apex Mesh Cloud Topology Explorer, and the Synapse Telemetry Broker. Let me know if you want deep details on any of these.";
   }
-  return "Hello! I am Landry  AI career advisor. Ask me anything about his engineering experience, technical stack, or projects. (Since no GEMINI_API_KEY is currently provided in early preview, I am running on fallback mode!)";
+  return "Hello! I am Landry's AI career advisor. Ask me anything about his engineering experience, technical stack, or projects. (Since no GEMINI_API_KEY is currently provided in early preview, I am running on fallback mode!)";
 }
 
 // Hook up Vite Dev Server Middleware or serve static built files
@@ -128,7 +127,7 @@ async function startServer() {
   } else {
     const distPath = path.join(process.cwd(), "dist");
     app.use(express.static(distPath));
-    app.get("*", (req:any, res:any) => {
+    app.get("*", (req: any, res: any) => {
       res.sendFile(path.join(distPath, "index.html"));
     });
   }
